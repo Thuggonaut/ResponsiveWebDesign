@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale-1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+
+    <h1 id="title">NotTooSweet Survey Form</h1>
+    <p id="description">Thank you for supporting us!</p>
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Name <input id="name" type="text" placeholder="Enter your full name" value="name" required><label>
+          <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" value="email" required></label>
+          <label id="number-label">Number <input id="number" type="number" min="100000001" max="999999999" placeholder="Enter your phone number without spaces" value="number"></label>
+        </fieldset>
+        <fieldset>
+          <label>Would you tell your friends/family about our services?
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>I would reccommend</option>
+            <option>I would not reccommend</option>
+          </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Sweet Preference</legend>
+          <label for="mochis"><input id="mochis" type="radio" name="preference" class="inline" value="mochis" checked> Mochis</label>
+          <label for="cupcakes"><input id="cupcakes" type="radio" name="preference" class="inline" value="cupcakes" checked> Cupcakes</label>
+        </fieldset>
+        <fieldset>
+          <legend>Flavour Favourites</legend>
+          <label for="durian"><input id="durian" type="checkbox" name="flavours" value="durian" class="inline"> Durian</label>
+          <label for="pandan"><input id="pandan" type="checkbox" name="flavours" value="pandan" class="inline"> Pandan</label>
+          <label for="ube"><input id="ube" type="checkbox" name="flavours" value="ube" class="inline"> Ube</label>
+          <label for="chocolate"><input id="chocolate" type="checkbox" name="flavours" value="chocolate" class="inline"> Chocolate</label>
+        </fieldset>
+        <fieldset>
+          <label for="comments">How would you like us to improve?
+            <textarea id="comments" rows="5"></textarea>
+          </label>			
+        </fieldset>
+        <fieldset>
+          <button id="submit" type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
+

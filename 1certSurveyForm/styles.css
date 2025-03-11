@@ -1,0 +1,68 @@
+body {
+	background-color: lightpink;
+	color: beige;
+	font-family: Calibri;
+	font-size: 20px;
+  }
+  
+  main {
+	background-color: rosybrown;
+	max-width: 70%;
+	margin-left: auto;
+	  margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 20px;
+	padding-bottom: 40px;
+  }
+  
+  fieldset {
+	border: none;
+  }
+  
+  h1 {
+	text-align: center;
+	font-size: 45px;
+	font-weight: normal;
+	margin: 1em auto;
+  }
+  
+  p {
+	text-align: center;
+  }
+  
+  label, select {
+	margin: 0.5rem 0;
+	display: block;
+  }
+  
+  input, select, textarea {
+	margin-bottom: 20px;
+	margin-top: 8px;
+	min-height: 2em;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+	width: 100%;
+  }
+  
+  .inline {
+	width: unset;
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+	display: inline; 
+  }
+  
+  button[type="submit"] {
+	display: block;
+	width: 20%;
+	margin: 1em auto;
+	height: 2em;
+	font-size: 1.1rem;
+	background-color: hotpink;
+	border-color: lightpink;
+	min-width: 300px;
+  }
