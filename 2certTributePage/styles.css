@@ -1,0 +1,52 @@
+body {
+	background-color: rgb(30, 30, 30);
+}
+
+h1 {
+	font-size: 10vw;
+}
+
+h2 {
+	font-weight: lighter;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+h1, h2, p, figcaption {
+	color: rgb(249, 246, 207);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+}
+
+figure > img {
+	max-width: 100%;
+	height: auto;
+	margin: 10px 0;
+	display: block;
+	margin: 50px auto 20px auto;
+	border-radius: 10px;
+	filter: drop-shadow(0 0 3px rgb(255, 2, 154));
+}
+
+a {
+	text-decoration: none;
+	color: rgb(245, 93, 182);
+}
+
+section {
+	padding: 20px 0 0 10px;
+}
+
+.bold {
+	font-weight: 800;
+	word-spacing: 10px;
+}
+
+.timeline > li {
+	color: rgb(249, 246, 207);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	list-style-type: disc;
+	padding: 10px 0 10px 0;
+}

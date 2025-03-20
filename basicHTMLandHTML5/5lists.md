@@ -12,6 +12,7 @@
   <li>salmon</li>
 </ul>
 ```
+- change styles of bullets with <list-style-type>
 
 
 # Ordered lists or numbered lists
@@ -20,7 +21,7 @@
 - For example:
 ```html
   <p>Top 3 things cats hate:</p>
-  <ul>
+  <ol>
     <li>baths</li>
     <li>citrus</li>
     <li>dirty litter</li>
