@@ -1,0 +1,153 @@
+html {
+	box-sizing: border-box; /* resets the box model */
+}
+
+body {
+	font-family: sans-serif;
+	color: #0a0a23;
+}
+
+span[class~="sr-only"] {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* define the visible portions of an element */
+	clip-path: inset(50%) !important; /* forming the clip-path into a rectangle within the element */
+	width: 1px !important; /* size the elements down */
+	height: 1px !important;
+	overflow: hidden !important; /* prevent the text content from overflowing */
+	white-space: nowrap !important; /* prevent the text content from overflowing */
+	position: absolute !important; /* remove elements out of the document flow */
+	padding: 0 !important;
+	margin: -1px !important;
+}
+
+h1 {
+	max-width: 37.25rem;
+	margin: 0 auto; /* top $ bottom; left & right values */
+	padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+	display: flex;
+	flex-direction: column-reverse; /* display the nested elements from bottom to top */
+	gap: 1rem; /* set space between elements */
+}
+
+h1 .flex span:first-of-type {
+	font-size: 0.7em; /* make `AcmeWidgetCorp` look like a subheading */
+}
+
+h1 .flex span:last-of-type {
+	font-size: 1.2em; /* make `Balance Sheet` look like a header */
+}
+
+section {
+	max-width: 40rem; /* responsive design */
+	margin: 0 auto; /* centers */
+	border: 2px solid #d0d0d5;
+}
+
+#years {
+	display: flex;
+	justify-content: flex-end; /* Justify the content to the end of the flex direction */
+	position: sticky; /* make the element sticky */
+	z-index: 999; /* ensure element is not hidden by other stacks */
+	top: 0; /* Fix it to the top of its container */
+	color: #fff;
+	background-color: #0a0a23;
+	margin: 0 -2px;
+	padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+}
+
+/* target any span element that has a class attribute set, regardless of the attribute's value */
+#years span[class] {
+	font-weight: bold;
+	width: 4.5rem;
+	text-align: right;
+}
+
+.table-wrap {
+	padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+table {
+	border-collapse: collapse; /* allow cell borders to collapse into a single border, instead of a border around each cell */
+	border: 0;
+	width: 100%;
+	position: relative;
+	margin-top: 3rem;
+}
+
+table caption {
+	color: #356eaf;
+	font-size: 1.3em;
+	font-weight: normal;
+	position: absolute;
+	top: -2.25rem;
+	left: 0.5rem;
+}
+
+tbody  td {
+	width: 100vw; /* Make it full screen width */
+	min-width: 4rem; /* But never smaller than 4rem */
+	max-width: 4rem; /* But never wider than 4rem (≈64px) */
+}
+
+tbody th {
+	width: calc(100% - 12rem); /* width of the entire container, less 12rem */
+}
+
+tr[class="total"] {
+	border-bottom: 4px double #0a0a23;
+	font-weight: bold;
+}
+
+tr[class="total"] th {
+	text-align: left;
+	padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+	text-align: right;
+	padding: 0 0.25rem;
+}
+
+tr.total td:nth-of-type(3) {
+	padding: 0.5rem;
+}
+
+tr.total:hover {
+	background-color: #99c9ff;
+}
+
+td[class="current"] {
+	font-style: italic;
+}
+
+tr[class="data"] {
+	background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+	text-align: left;
+	padding-top: 0.3rem;
+	padding-left: 0.5rem;
+}
+
+tr.data th .description {
+	display: block;
+	font-style: italic;
+	font-weight: normal;
+	padding: 1rem 0 0.75rem;
+	margin-right: -13.5rem;
+}
+
+tr.data td {
+	position: relative;
+	vertical-align: top;
+	text-align: right;
+	padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type {
+	padding-right: 0.5rem;
+}

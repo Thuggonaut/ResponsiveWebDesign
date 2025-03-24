@@ -31,3 +31,11 @@
   padding: 20px;
 }
 ```
+
+# padding vs margin
+```css
+.element {
+    margin: 10px;    /* Space outside the element */
+    padding: 10px;   /* Space inside the element */
+}
+```

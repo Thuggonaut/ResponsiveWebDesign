@@ -13,3 +13,4 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 ```
+- `./styles.css` explicitly tells the browser to look in the current directory.
