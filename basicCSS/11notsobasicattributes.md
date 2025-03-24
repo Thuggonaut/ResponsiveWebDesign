@@ -25,6 +25,42 @@ color: blue;
 ```
 - In this example, only `<p>` elements that are direct children of a `<div>` will be styled with blue text. If a `<p>` is nested inside another element within the `<div>`, it will not be affected.
 
+# > vs without
+```css
+/* This selects ONLY paragraphs that are direct children of div */
+div > p {
+    color: blue;
+}
+```
+```html
+<div>
+    <p>Selected ✅</p>
+    <section>
+        <p>Not Selected ❌</p>
+        <article>
+            <p>Not Selected ❌</p>
+        </article>
+    </section>
+</div>
+```
+```css
+/* This selects ALL paragraphs inside div, no matter how deeply nested */
+div p {
+    color: red;
+}
+```
+```html
+<div>
+    <p>Selected ✅</p>
+    <section>
+        <p>Also Selected ✅</p>
+        <article>
+            <p>Still Selected ✅</p>
+        </article>
+    </section>
+</div>
+
+
 
 # max function
 - returns the largest of a set of comma-separated values. For example:
