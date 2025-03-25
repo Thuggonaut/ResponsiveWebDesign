@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<title>Technical Documentation</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<header>Basic HTML Documentation</header>
+			<a class="nav-link" href="#basic_html">Basic HTML</a>
+			<a class="nav-link" href="#basic_attributes">Basic Attributes</a>
+			<a class="nav-link" href="#anchor_elements">Anchor Elements</a>
+			<a class="nav-link" href="#lists">Lists</a>
+			<a class="nav-link" href="#sections">Sections</a>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="basic_html">
+				<header>Basic HTML</header>
+				<p>Basic Elements include: headings(h1, h2, h3 etc.), paragraphs(p) and divisions(div).</p>
+				<p>All HTML tags are written in lowercase, and must have open tags, e.g. &lt;h1&gt;  and closing &lt;/h1&gt; with a /.</p>
+			</section>
+			<section class="main-section" id="basic_attributes">
+				<header>Basic Attributes</header>
+				<p>Basic attributes include `src`, and `alt`, for instance, when adding an &lt;img&gt;. For example:</p>
+				<code>&lt;img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="relaxing cat"&gt;</code>
+				<ul>
+					<li>The src attribute is used to specify the URL of the image you want to display.</li>
+					<li>The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.</li>
+				</ul>
+			</section>
+			<section class="main-section" id="anchor_elements">
+				<header>Anchor Elements</header>
+				<p>Anchor elements are used to create hyperlinks that connect to other web pages, files, locations within the same page or any other URL.</p>
+				<p>The open and close tags are &lt;a&gt; and &lt;/a&gt;.</p>
+				<p>Anchor elements need a destination web address and an anchor text. For example:</p>
+				<code>&lt;a href="https://www.freecodecamp.org"&gt;Click here&lt;/a&gt;</code>
+				<p>The browser will display the text "Click here" as a link.</p>
+				<h3>Links to internal pages</h3>
+				<p>Links to different sections within a webpage are created by assigning a link's href attribute to a # hash symbol followed by the value of the id attribute of the element you want to link to. For example:</p>
+				<p><code>&lt;a href="#contacts-header"&gt;Contacts&lt;/a&gt;</code> where the target destination is:</p>
+				<code>&lt;h2 id="contacts-header"&gt;Contacts&lt;/h2&gt;</code>
+				<p>When users click the Contacts link, they'll be taken to the section of the webpage with the Contacts heading element.</p>
+			</section>
+			<section class="main-section" id="lists">
+				<header>Lists</header>
+				<h3>Unordered lists and bullet points</h3>
+				<p>Holds a collection of list items that are not ordered.</p>
+				<ul>
+					<li>List tags are &lt;ul&gt; and &lt;/ul&gt;</li>
+					<li>With &lt;li&gt; elements for each bullet point</li>
+				</ul>
+				<h3>Ordered lists</h3>
+				<ul>
+					<li>List tags are &lt;ol&gt; and &lt;/ol&gt;</li>
+					<li>With &lt;li&gt; elements for each bullet point</li>
+				</ul>
+			</section>
+			<section class="main-section" id="sections">
+				<header>Sections</header>
+				<p>Sections are used to define sections in a document, such as chapters, headers, footers, or any other sections of the document.</p>
+				<p>It is a semantic element that helps with SEO and accessibility. For example:</p>
+				<code>
+					&lt;section&gt;<br>
+					&lt;h2&gt;Cat Lists&lt;/h2&gt;<br>
+					&lt;h3&gt;Things cats love:&lt;/h3&gt;<br>
+					&lt;ul&gt;<br>
+						&lt;li&gt;cat nip&lt;/li&gt;<br>
+						&lt;li&gt;laser pointers&lt;/li&gt;<br>
+						&lt;li&gt;lasagna&lt;/li&gt;<br>
+					&lt;/ul&gt;<br>
+				</code>
+				<code>
+					&lt;img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."&gt;<br>
+					&lt;/section&gt;
+				</code>
+			</section>
+		</main>
+	</body>
+</html>
